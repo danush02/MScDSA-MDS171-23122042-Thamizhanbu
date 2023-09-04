@@ -7,7 +7,8 @@
 
 **MDS171 - Python Programming Lab 🧑‍💻**
 ---
-|S.No|Date|Program Name|
-|----|-----|-----------|
-|1|23-08-2023|Program and Push to GitHub|
-|2|28-08-2023|Program to record and analyze unique names|
+|S.No|Date|Program Name|Link|
+|----|-----|-----------|----|
+|1|23-08-2023|Program and Push to GitHub|[Lab 01](https://github.com/danush02/MScDSA-MDS171-23122042-Thamizhanbu/tree/86f86fe693ac356f6c54d8187577e8980c1ca904/Lab%2001)
+|2|28-08-2023|Program to record and analyze unique names|[Lab 02](https://github.com/danush02/MScDSA-MDS171-23122042-Thamizhanbu/blob/86f86fe693ac356f6c54d8187577e8980c1ca904/Lab%2002.ipynb)
+|3|01-09-2023|Program to find Mean, Minimum, Maximum, Range, Mode and Median for given values|[Lab 03](https://github.com/danush02/MScDSA-MDS171-23122042-Thamizhanbu/blob/86f86fe693ac356f6c54d8187577e8980c1ca904/Lab%2003.ipynb)
