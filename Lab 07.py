@@ -1,5 +1,4 @@
 import random
-import os
 orderDetails={"order":[]}
 
 def generateOrderid():
@@ -34,11 +33,15 @@ def createOrder():
             print("Please enter the correct item number")
 
 def viewOrder():
+    sum=0
     for i in range(0,len(orderDetails["order"])):
         print("Order ID:",orderDetails["order"][i]["orderID"])
         print("Item   Quanity   Amount")
         for j in range(0,len(orderDetails["order"][i]["items"])):
-            print(priceList[orderDetails["order"][i]["items"][j]["itemnumber"]][0],orderDetails["order"][i]["items"][j]["quantity"],)
+            amount=int(orderDetails["order"][i]["items"][j]["quantity"])*int(priceList[int(orderDetails["order"][i]["items"][j]["itemnumber"])-1][1])
+            print(priceList[int(orderDetails["order"][i]["items"][j]["itemnumber"])-1][0],"  ",orderDetails["order"][i]["items"][j]["quantity"],"     ",amount)
+            sum=sum+amount
+    print("Your total bill amount is ",sum)
 
 priceList=[["dish1",20],["dish2",40],["dish3",55],["dish4",70],["dish5",35],["dish6",45]]
 print("*"*30)
