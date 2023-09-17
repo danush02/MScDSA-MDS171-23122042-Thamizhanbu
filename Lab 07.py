@@ -1,12 +1,14 @@
 import random
-orderDetails={"order":[]}
+orderDetails={"order":[]} #Global Dictionary to store orders
 
+#Function to generate order ID
 def generateOrderid():
     rand=[0]*5
     for i in range(0,5):
         rand[i]=str(random.randint(0,9))
     return rand[0]+rand[1]+rand[2]+rand[3]+rand[4]
 
+#Function to receive new order and store it in dictionary
 def createOrder():
     print("Menu")
     print("*"*30)
@@ -32,6 +34,7 @@ def createOrder():
         else:
             print("Please enter the correct item number")
 
+#Function to view the orders
 def viewOrder():
     sum=0
     for i in range(0,len(orderDetails["order"])):
