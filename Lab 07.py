@@ -1,3 +1,5 @@
+#Program to write and store order details in dictionary and retrieve it for analysis
+
 import random
 orderDetails={"order":[]} #Global Dictionary to store orders
 
