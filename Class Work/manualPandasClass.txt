@@ -1,0 +1,62 @@
+import os
+class pandas_thamizh:
+    def __init__(self):
+        self.data_Dict={"dict":[]}
+
+    def read_CSV(self,fileName):
+        if os.path.isfile(fileName):
+            for i in open(fileName,"r+").readlines():
+                line=i.split(",")
+                if line[2]=="Amount":
+                    pass
+                else:
+                    sub_Dict={"age":line[0],"expense":line[1],"familysize":line[2].strip()}
+                    self.data_Dict["dict"].append(sub_Dict)
+        else:
+            print("File does not exist")
+            return False
+     
+    def describe(self,col):
+        print(col)
+        num=[]
+        count=0
+        sum=0
+        for i in self.data_Dict["dict"]:
+            if count!=0:
+                sum+=int(i[col])
+                num.append(int(i[col]))
+            count+=1
+        print("Count:",count-1)
+        self.mean(sum,count)
+        self.mode(num)
+        self.median(num)
+    
+    def mean(self,sum,count):
+        print("Mean:",sum/(count-1))
+
+    def mode(self,num):
+        mode=0
+        flag1=0
+        flag2=0
+        for i in num:
+            flag1=0
+            for j in num:
+                if i==j:
+                    flag1+=1
+            if flag1>flag2:
+                flag2=flag1
+                mode=i
+        print("Mode:",mode)
+
+    def median(self,num):
+        median=int(len(num)/2)-1
+        print("Median:",num[median])
+  
+obj=pandas_thamizh()
+obj.read_CSV("Arithmatic_Calculations.csv")
+#obj.head(3)
+#print("\nTail")
+#obj.tail(2)
+column=int(input("Enter the column name needs to analysed - 1.Age 2.Expense 3.Family Size"))
+columnName=["age","expense","familysize"]
+obj.describe(columnName[column-1])
