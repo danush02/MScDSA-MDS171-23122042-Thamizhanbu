@@ -21,7 +21,9 @@
 |9|22-09-2023|Program to read and write data from and to csv file. Calculate total from the data|[Lab 09](https://github.com/danush02/MScDSA-MDS171-23122042-Thamizhanbu/tree/9941614e306bcc782d03382c6a59e6d08cbf70cb/Lab%2009)
 |10|23-09-2023|
 
+---
 **CAC Works**
 |CAC|Title|Link|
 |---|-----|----|
-|1|Application: Billing Management System|[CAC1]()
+|1|Application: Billing Management System|[CAC1](https://github.com/danush02/MScDSA-MDS171-23122042-Thamizhanbu/tree/add559576c42b37cb7caffd62c48927cfb448b3c/CAC/CAC1)
+|2|Network Issue Survey|[CAC2](https://github.com/danush02/MScDSA-MDS171-23122042-Thamizhanbu/tree/add559576c42b37cb7caffd62c48927cfb448b3c/CAC/CAC2)
